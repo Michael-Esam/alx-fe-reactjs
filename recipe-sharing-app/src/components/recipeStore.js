@@ -1,5 +1,5 @@
 import create from 'zustand';
-
+["setSearchTerm", "searchTerm"]
 const useRecipeStore = create(set => ({
   recipes: [],
   favorites: [],
