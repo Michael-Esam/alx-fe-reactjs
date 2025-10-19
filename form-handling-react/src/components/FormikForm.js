@@ -2,7 +2,7 @@ import React from 'react'
 import { Formik, Form, Field, ErrorMessage } from 'formik'
 import * as Yup from 'yup'
 
-const FormikForm = () => {
+const formikForm = () => {
   // Validation schema
   const validationSchema = Yup.object({
     username: Yup.string()
