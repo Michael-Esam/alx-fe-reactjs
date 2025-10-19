@@ -5,12 +5,12 @@ import * as Yup from 'yup'
 const formikForm = () => {
   // Validation schema
   const validationSchema = Yup.object({
-    username: Yup.string()
+    username: Yup.string().required
       .required('Username is required'),
-    email: Yup.string()
+    email: Yup.string().required
       .email('Invalid email address')
       .required('Email is required'),
-    password: Yup.string()
+    password: Yup.string().required
       .min(6, 'Password must be at least 6 characters')
       .required('Password is required'),
   })
